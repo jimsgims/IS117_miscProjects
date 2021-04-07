@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Mobile-friendly-->
+        <title>Home</title>
+
+        <!--Bootstrap stuff-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark static-top p-3">
+                <!--Logo-->
+                <a class="navbar-brand mr-5 ml-3" href="index.html">James Wisniewski</a>
+
+                <!-- Toggle/collapsible Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapseNavbar">
+                    <ul class="navbar-nav">
+                        <!--Links-->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <!--Dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbardrop" data-toggle="dropdown">Assignments</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="layoutsHome.html">Layouts</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--Header-->
+        <div class="jumbotron text-center">
+            <h1>Welcome to my website!</h1>
+            <p>This website hosts the smaller projects I've worked on in IS 117.</p>
+        </div>
+
+        <!--List of Projects-->
+        <div class="container mb-5">
+            <h1>List of Mini-Projects</h1>
+            <ul>
+                <li>
+                    <h4><a href="layoutsHome.html">Layouts: Original, Flex, and Grid</a></h4>
+                </li>
+                <li>
+                    <h4>More to come!</h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container mb-5">
+            <!--Image-->
+            <img src="images/big%20mouth.jpg" class="rounded image-fluid" style="max-width: 100%">
+            <p class="text-muted text-center mt-2">Funny image. At least, it's funny to me.</p>
+            <p class="text-muted text-center">... Look, I needed to make space so that the footer didn't look awkward.
+            No judging.</p>
+        </div>
+
+        <!--Footer-->
+        <footer class="bg-dark text-center text-lg-start">
+            <div class="container p-4">
+                <div class="row">
+                    <!--Info-->
+                    <div class="col-lg-3 m-auto">
+                        <h1 class="text-white pb-2">James Wisniewski</h1>
+                        <p class="text-white">This website hosts the mini-projects that I'm creating in IS117.</p>
+                    </div>
+                    <div class="col-lg-5"></div>
+
+                    <!--Links-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Explore</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="index.html" class="text-info small">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-white">Layouts</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="layoutsHome.html" class="text-info small">Layouts Home</a>
+                            </li>
+                            <li>
+                                <a href="layouts-original.html" class="text-info small">Original Layout</a>
+                            </li>
+                            <li>
+                                <a href="layouts-flex.html" class="text-info small">Flex Layout</a>
+                            </li>
+                            <li>
+                                <a href="layouts-grid.html" class="text-info small">Grid Layout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © Copyright 2021: James Wisniewski
+            </div>
+        </footer>
+    </body>
+</html>
